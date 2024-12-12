@@ -1,0 +1,17 @@
+:root{
+    padding: 0;
+    margin: 0;
+    --background500: #F5F5ED;
+    --background600: #D2D2C8;
+    --primary900:#12180A;
+    --secundary700:#3B715A;
+    --tertiary400:#E7F1E9;
+    --destaque:#E4971A;
+    --destaqueVerde:#0F8A13;
+}
+
+
+#welcome{
+    color: var(--primary900);
+    background-color: var(--destaque);
+}
