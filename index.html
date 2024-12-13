@@ -138,25 +138,25 @@
             </div>
         </section>
         <!-- Formulario Cliente -->
-        <section class="forme">
+        <section id="secao-form">
             <form action="">
                 <legend>Buscando algo diferente?</legend>
                 <p>Se você está buscando algo diferente ou quer falar com um especialista, preencha os dados abaixo que teremos o prazer de auxiliar você e sua empresa.</p>
-                <div>
+                <div class="form">
                     <label for="inome">nome</label>
-                    <input type="text" name="nome" id="inome">
+                    <input type="text" name="nome" id="inome" required placeholder="Nome">
                 </div>
-                <div>
+                <div class="form">
                     <label for="iemail">Email</label>
-                    <input type="email" name="email" id="iemail">
+                    <input type="email" name="email" id="iemail" required placeholder="Email">
                 </div>
-                <div>
+                <div class="form">
                     <label for="inumero">Numero:</label>
-                    <input type="number" name="Numero" id="inumero">
+                    <input type="number" name="Numero" id="inumero" required placeholder="Telefone">
                 </div>
-                <div>
+                <div class="form">
                     <label for="iEndereco">Endereço:</label>
-                    <input type="text" name="Endereco" id="iendereco">
+                    <input type="text" name="Endereco" id="iendereco" required placeholder="Edereço">
                 </div>
                 <button>Enviar</button>
             </form>

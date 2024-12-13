@@ -34,4 +34,41 @@ header {
     background-color: #0F8A13;
 }
 
+#secao-form {
+    padding: 50px 0px;
+}
 
+form {
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    background-color: var(--secundary700);
+}
+
+form legend {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form > input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    outline: none;
+    padding-top: 25px;
+}
+
+
+.form > label {
+    display: none;
+}
+
+button {
+   margin-top: 20px;
+   border: none;
+   background: none;
+   width: 100%;
+   background-color: var(--destaque);
+   padding: 5px;
+}
