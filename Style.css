@@ -62,17 +62,14 @@ form p {
 .form > input {
     border: none;
     background: none;
+    padding: 7px 15px;
     border: 1px solid rgb(143, 143, 143);
     border-radius: 15px;
-    width: 92%;
-    outline: none;
-    padding-top: 8px;
+    width: 90%;              
+    outline: none;             
     margin-top: 20px;
     background-color: #D2D2C8;
-}
 
-.form input[placeholder] {
-    padding-left: 20px ;
 }
 
 
@@ -88,6 +85,15 @@ button {
    background-color: var(--destaque);
    
    padding: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #85570e;
+    color: var(--background500);
+    transition: 0.4s ease, transform 0.4s ease ;
+    
 }
 
 footer {
