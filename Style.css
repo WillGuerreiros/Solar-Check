@@ -70,5 +70,6 @@ button {
    background: none;
    width: 100%;
    background-color: var(--destaque);
+   
    padding: 5px;
 }
