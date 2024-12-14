@@ -126,10 +126,11 @@ footer {
     margin-bottom: 10px;
 }
 
+
 .contato-rodape ul > li:hover {
     background-color: #85c2858e;
-    color: #88e28b;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .politicas-usuario {
