@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -12,12 +20,58 @@
     --tertiary400: #E7F1E9;
     --destaque: #E4971A;
     --destaqueVerde: #0F8A13;
-    text-decoration: none;
+
 }
 
 header {
-    display: none;
+    background: var(--secundary700);
+    color: var(--background600);
+    padding: 16px;
 }
+
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--background600);
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--background600);
+    margin-top: 5px;
+}
+
+
+.barraNavegacao {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.itemBarraNavegacao {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+
+}
+
+.itemBarraNavegacao a {
+    font-size: medium;
+    text-decoration: none;
+    color: var(--background600);
+    padding-block: 16px;
+    font-family: "Bebas Neue";
+}
+
 
 .home {
     background-image: url(assets/images/homepageimage.png);
@@ -29,9 +83,34 @@ header {
     background-size: cover;
 }
 
-#teste{
-    width: 70%;
-    background-color: #0F8A13;
+
+@media(max-width:480px) {
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
+
+    .itemBarraNavegacao {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--secundary700);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+
+    }
+
+
+    .barraNavegacao.active .itemBarraNavegacao {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
 }
-
-
