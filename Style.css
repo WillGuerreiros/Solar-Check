@@ -9,8 +9,8 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 
 :root {
     --background500: #F5F5ED;
@@ -29,16 +29,16 @@ header {
     padding: 16px;
 }
 
-.hamburguer{
+.hamburguer {
     display: none;
     border: none;
     background: none;
-    border-top:3px solid var(--background600);
+    border-top: 3px solid var(--background600);
     cursor: pointer;
 }
 
 .hamburguer::before,
-.hamburguer::after{
+.hamburguer::after {
     content: " ";
     display: block;
     width: 30px;
@@ -48,15 +48,15 @@ header {
 }
 
 
-.barraNavegacao{
-    max-width:1280px;
+.barraNavegacao {
+    max-width: 1280px;
     height: 70px;
     margin-inline: auto;
     display: flex;
     justify-content: space-around;
 }
 
-.itemBarraNavegacao{
+.itemBarraNavegacao {
     display: flex;
     gap: 32px;
     list-style: none;
@@ -64,11 +64,11 @@ header {
 
 }
 
-.itemBarraNavegacao a{
+.itemBarraNavegacao a {
     font-size: medium;
     text-decoration: none;
     color: var(--background600);
-    padding-block:16px ;
+    padding-block: 16px;
     font-family: "Bebas Neue";
 }
 
@@ -84,10 +84,13 @@ header {
 }
 
 
-@media(max-width:480px){
-    .hamburguer{display: block;}
+@media(max-width:480px) {
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
 
-    .itemBarraNavegacao{
+    .itemBarraNavegacao {
         position: fixed;
         top: 0;
         left: 0;
@@ -100,13 +103,13 @@ header {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        gap:0;
+        gap: 0;
         pointer-events: none;
 
     }
 
 
-    .barraNavegacao.active .itemBarraNavegacao{
+    .barraNavegacao.active .itemBarraNavegacao {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
