@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bebas+Neue&display=swap');
 
 * {
     padding: 0px;
@@ -6,11 +7,6 @@
     text-decoration: none;
 }
 
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 
 :root {
@@ -70,8 +66,7 @@ header {
 
 
 .barraNavegacao {
-    max-width: 1280px;
-    height: 70px;
+    height: 8vh;
     margin-inline: auto;
     display: flex;
     justify-content: space-around;
@@ -94,51 +89,71 @@ header {
 }
 
 
-.home {
+#home {
     background-image: url(assets/images/homepageimage.png);
-    height: 500px;
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 
+.homeInfo{
+    border: #0F8A13 2px solid;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Bebas Neue";
+    color: var(--background500);
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px;
+}
+.homeInfo h1{
+    font-size: 150px;
+}
 
-/* @media(max-width:480px) {
-    .hamburguer {
-        display: block;
-        z-index: 1;
-    }
+.homeInfo h3{
+    font-size: larger;
+}
+.homeInfo a {
+    text-decoration: none;
+    background-color: var(--secundary700);
+    color: var(--background500);
+    padding: 16px;
+    border-radius: 8px;
+    padding-inline: 64px;
+}
 
-    .itemBarraNavegacao {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: var(--secundary700);
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
+/*Pagina sobre*/
+#sobre{
+    height: 70vh;
+    display: flex;
+    background-color: var(--background600);
+    font-family: "ABeeZee";
+    text-align: center;
+    align-items: center;
+    padding: 64px;
+    gap: 64px;
+}
 
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-
-    }
-  
-  .barraNavegacao.active .itemBarraNavegacao {
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-  }
-
-} */
+.sobreInfo{
+    flex-direction: column;
+}
+.sobreInfo h1{
+    font-size: xx-large;
+    margin: 32px;
+}
 
 #sobre  img {
-    width: 370px;
-
+    display: flex;
+    width: 50%;
+    height: auto;
 }
+
+
+
 
 /* Preços */
 
