@@ -280,3 +280,59 @@ footer {
     padding-right: 20px;
 
 }
+
+.demonstracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.demonstracao-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.demonstracao-img {
+    width: 100%;
+    max-width: 500px;
+    border: 3px solid #2d5b42;
+    border-radius: 5px;
+}
+
+.demonstracao-conteudo {
+    flex: 1;
+    text-align: left;
+}
+
+.demonstracao-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d5b42;
+    margin-bottom: 1rem;
+}
+
+.demonstracao-texto {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.btnDemo {
+    display: inline-block;
+    background: #2d5b42;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btnDemo:hover {
+    background: #4CAF50;
+}
