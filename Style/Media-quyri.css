@@ -1,0 +1,61 @@
+
+
+/* Css PARA MYDIA QUIRI - Tamanhos de Telas Diferentes */
+
+
+@media(max-width:480px) {
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
+
+    .itemBarraNavegacao {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--secundary700);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+
+    }
+  
+  .barraNavegacao.active .itemBarraNavegacao {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    #secao-form {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form {
+        width: 400px;
+        height: 400;
+        margin: 0px;
+    }
+
+    .imagem-midia {
+        background: url(../assets/images/Design\ sem\ nome\ \(33\).png) ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 400px;
+        display: block; 
+    
+
+    }
+    
+}
