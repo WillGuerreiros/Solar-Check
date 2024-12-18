@@ -438,7 +438,9 @@ footer {
 }
 
 
-.contato-rodape img {}
+.contato-rodape img {
+    padding-left: 20px;
+}
 
 .contato-rodape ul>li {
     padding: 10px;
@@ -447,7 +449,9 @@ footer {
 
 
 
-.contato-rodape img:hover {}
+.contato-rodape img:hover {
+
+}
 
 .contato-rodape ul>li:hover {
     background-color: #85c2858e;
