@@ -27,7 +27,6 @@ button {
     width: 100%;
     background-color: var(--destaque);
     font-weight: bolder;
-
     padding: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -81,7 +80,7 @@ header {
 }
 
 .itemBarraNavegacao a {
-    font-size: medium;
+    font-size: 20px;
     text-decoration: none;
     color: var(--background600);
     padding-block: 16px;
@@ -161,6 +160,110 @@ header {
 }
 
 
+/*nossa solucao*/
+
+#solucao{
+    padding: 64px;
+    text-align: center;
+    background-color: var(--secundary700);
+    font-family: "aBeezee";
+    color: var(--background500);
+    text-decoration: none;
+
+}
+.solucaoimg{
+    max-width: 100%;
+    max-height: 200px;
+}
+.solucaoInfo h2{
+    font-size: 32px;
+    margin: 32px;
+
+}
+.solucaoInfo p{
+    text-align: center;
+}
+
+.solucaoIconContainer{
+    gap: 32px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.solucaoIcons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.solucaoIcons img{
+
+}
+
+/*sessao de demonstração*/
+
+.demonstracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    font-family: "aBeezee";
+    text-align: center;
+}
+
+.demonstracao-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.demonstracao-img {
+    width: 100%;
+    max-width: 500px;
+    border: 3px solid #2d5b42;
+    border-radius: 5px;
+}
+
+.demonstracao-conteudo {
+
+    flex: 1;
+    padding: 32px;
+}
+
+.demonstracao-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d5b42;
+    margin-bottom: 1rem;
+}
+
+.demonstracao-texto {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.btnDemo {
+    display: inline-block;
+    background: #2d5b42;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    align-self: center;
+}
+
+.btnDemo:hover {
+    background: #4CAF50;
+}
+
 /*card preços*/
 
 .consultoria {
@@ -178,7 +281,7 @@ header {
 .titulo {
     background-color: var(--destaque);
     text-shadow: 0px 0px 5px var(--primary900);
-    padding: 64px;
+    padding: 32px;
     color: var(--background600);
     font-size: 50px;
     margin-bottom: 20px;
@@ -234,7 +337,6 @@ p {
     text-align: center;
     margin-bottom: 10px;
 }
-
 
 
 .btn-contato {
@@ -298,9 +400,6 @@ form p {
 .form>label {
     display: none;
 }
-
-
-
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
@@ -378,59 +477,4 @@ footer {
 
 }
 
-.demonstracao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-}
-
-.demonstracao-container {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.demonstracao-img {
-    width: 100%;
-    max-width: 500px;
-    border: 3px solid #2d5b42;
-    border-radius: 5px;
-}
-
-.demonstracao-conteudo {
-    flex: 1;
-    text-align: left;
-}
-
-.demonstracao-titulo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2d5b42;
-    margin-bottom: 1rem;
-}
-
-.demonstracao-texto {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.btnDemo {
-    display: inline-block;
-    background: #2d5b42;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.btnDemo:hover {
-    background: #4CAF50;
-}
 
