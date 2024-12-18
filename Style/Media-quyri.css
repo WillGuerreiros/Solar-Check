@@ -3,7 +3,7 @@
 /* Css PARA MYDIA QUIRI - Tamanhos de Telas Diferentes */
 
 
-@media(max-width:480px) {
+@media(max-width:768px) {
     .hamburguer {
         display: block;
         z-index: 1;
@@ -32,6 +32,16 @@
         pointer-events: all;
   }
 
+  .rodape  {
+    
+  }
+
+  .imagem-midia > p, h1, li {
+    display: none;
+
+    }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -53,9 +63,54 @@
         background-position: center center;
         background-size: cover;
         width: 400px;
-        display: block; 
-    
+        margin: 0px;
+        box-shadow: 2px 0px 10px 1px rgba(0, 0, 0, 0.24) ;
+    }
 
+    .imagem-midia h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6FCD0B;
+        padding: 50px 40px 10px 40px;       
+    }
+
+    .imagem-midia p {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 40px 10px 40px;
+        color: #f8f8f8;   
+        font-weight: bolder;
+        font-size: 1.3em; 
+    }
+
+    .imagem-midia ul li {
+        list-style: none;
+        color: white;
+        font-size: 1em;
+        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     
+    .imagem-midia ul {
+        padding-left: 40px;
+        padding-top:20px ;
+    }   
+
+    .imagem-midia ul li > img {
+        padding-right: 10px;
+    }
+    
+    /* Formulario */
+
+    /* Rodap */
+    .contato-rodape {
+        border-left: 1px solid rgb(179, 179, 179);
+        padding: 0px 40px;
+        width: 300px;
+    }
+
+    #displai-flex {
+        display: flex;
+        justify-content: space-around;
+        gap: 0px;
+
+    }
 }

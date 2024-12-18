@@ -264,15 +264,17 @@ form {
     margin: auto;
     padding: 10px;
     width: 300px;
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.24) ;
 }
 
 form legend {
     text-align: center;
     font-size: 1.2em;
     padding-bottom: 15px;
+    padding-top: 15px ;
     padding-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 form p {
@@ -284,19 +286,20 @@ form p {
     border: none;
     background: none;
     padding: 7px 15px;
-    border: 1px solid rgb(143, 143, 143);
-    border-radius: 15px;
-    width: 90%;
-    outline: none;
+    border: 1px solid rgb(28, 28, 28);
+    border-radius: 3px;
+    width: 90%;              
+    outline: none;             
     margin-top: 20px;
-    background-color: #D2D2C8;
+    background-color: #ffffff;
 
 }
-
 
 .form>label {
     display: none;
 }
+
+
 
 
 footer {
@@ -304,6 +307,9 @@ footer {
     background-color: var(--background500);
     padding: 50px 20px;
 }
+
+
+/* Rodapé */
 
 .contato-rodape h1 {
     text-align: center;
@@ -328,13 +334,21 @@ footer {
     display: flex;
     gap: 25px;
     list-style: none;
+    display: flex;
+    align-items: center;
 }
+
+
+.contato-rodape img {}
 
 .contato-rodape ul>li {
     padding: 10px;
     margin-bottom: 10px;
 }
 
+
+
+.contato-rodape img:hover {}
 
 .contato-rodape ul>li:hover {
     background-color: #85c2858e;
@@ -415,3 +429,4 @@ footer {
 .btnDemo:hover {
     background: #4CAF50;
 }
+
