@@ -32,16 +32,46 @@
         pointer-events: all;
   }
 
-  .imagem-midia > p, h1, li {
-    display: none;
+  .sobreInfo {
+    top: 1px;
+  }
 
+
+  .imagem-midia   {
+    display: none ;
+}
+
+    .contato-rodape p  {
+        text-align: left;
     }
-
 
 }
 
 @media screen and (min-width: 768px) {
+    #sobre {
+        display: flex;
+    }
+
+    #sobre  img {
+    width: 50%;
+    }
     
+    
+    .sobreInfo {
+        margin: auto;
+        text-align: left;
+        margin-left:50px ;
+        padding: 50px  100px 50px 20px;
+        width: 600px;
+        height: 250%;
+    }
+
+    /* Teste nossa Demonstração */
+
+    .demonstracao-container {
+        display: flex;
+    }
+
     #secao-form {
         display: flex;
         justify-content: center;
@@ -53,6 +83,8 @@
         margin: 0px;
     }
 
+
+
     .imagem-midia {
         background: url(../assets/images/Design\ sem\ nome\ \(33\).png) ;
         background-repeat: no-repeat;
@@ -60,7 +92,12 @@
         background-size: cover;
         width: 400px;
         margin: 0px;
+        text-align: left ;
         box-shadow: 2px 0px 10px 1px rgba(0, 0, 0, 0.24) ;
+    }
+
+    .imagem-midia > p {
+        text-align: left;
     }
 
     .imagem-midia h1 {
@@ -101,6 +138,10 @@
         border-left: 1px solid rgb(179, 179, 179);
         padding: 0px 40px;
         width: 300px;
+    }
+
+    .contato-rodape p {
+        text-align: left;
     }
 
     #displai-flex {
