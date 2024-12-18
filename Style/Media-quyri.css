@@ -32,10 +32,15 @@
         pointer-events: all;
   }
 
-  .imagem-midia > p, h1, li  {
-    display: none ;
+  .rodape  {
     
   }
+
+  .imagem-midia > p, h1, li {
+    display: none;
+
+    }
+
 
 }
 
@@ -95,6 +100,7 @@
     
     /* Formulario */
 
+    /* Rodap */
     .contato-rodape {
         border-left: 1px solid rgb(179, 179, 179);
         padding: 0px 40px;

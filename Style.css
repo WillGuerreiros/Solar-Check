@@ -257,13 +257,13 @@ footer {
     align-items: center;
 }
 
-.contato-rodape ul > li {
+.contato-rodape img {
     padding: 10px;
     margin-bottom: 10px;
 }
 
 
-.contato-rodape ul > li:hover {
+.contato-rodape img:hover {
     background-color: #85c2858e;
     transition: 0.3s;
     cursor: pointer;
