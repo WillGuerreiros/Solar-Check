@@ -66,6 +66,12 @@
         height: 250%;
     }
 
+    /* Teste nossa Demonstração */
+
+    .demonstracao-container {
+        display: flex;
+    }
+
     #secao-form {
         display: flex;
         justify-content: center;
