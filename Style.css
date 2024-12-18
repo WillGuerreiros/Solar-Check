@@ -21,23 +21,23 @@
 }
 
 button {
-   margin-top: 20px;
-   border: none;
-   background: none;
-   width: 100%;
-   background-color: var(--destaque);
-   font-weight: bolder;
-   
-   padding: 5px;
-   cursor: pointer;
-   transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    border: none;
+    background: none;
+    width: 100%;
+    background-color: var(--destaque);
+    font-weight: bolder;
+
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
     background-color: #85570e;
     color: var(--background500);
-    transition: 0.4s ease, transform 0.4s ease ;
-    
+    transition: 0.4s ease, transform 0.4s ease;
+
 }
 
 header {
@@ -95,12 +95,12 @@ header {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-   
+    background-size: cover; 
+
 }
 
-.homeInfo{
-    border: #0F8A13 2px solid;
+.homeInfo {
+    text-shadow: black;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -111,14 +111,19 @@ header {
     padding: 32px;
 
 }
-.homeInfo h1{
+
+.homeInfo h1 {
+
     font-size: 150px;
-    
+    color: var(--background600);
+    text-shadow: 0px 0px 5px var(--background600);
+
 }
 
-.homeInfo h3{
+.homeInfo h3 {
     font-size: larger;
 }
+
 .homeInfo a {
     text-decoration: none;
     background-color: var(--secundary700);
@@ -129,7 +134,7 @@ header {
 }
 
 /*Pagina sobre*/
-#sobre{
+#sobre {
     height: 100vh;
     display: flex;
     background-color: var(--background600);
@@ -140,15 +145,16 @@ header {
     gap: 64px;
 }
 
-.sobreInfo{
+.sobreInfo {
     flex-direction: column;
 }
-.sobreInfo h1{
+
+.sobreInfo h1 {
     font-size: xx-large;
     margin: 32px;
 }
 
-#sobre  img {
+#sobre img {
     display: flex;
     width: 50%;
     height: auto;
@@ -158,73 +164,80 @@ header {
 /*card preços*/
 
 .consultoria {
-    background-color: #f4f9fc;
-    padding: 50px 0;
-    background-color: #3B715A;
-  }
-  
-  .consultoria .container {
-    width: 90%;
+    background-color: var(--background600);
+    background-color: var(--secundary700);
+    font-family: "aBeeZee";
+}
+
+.consultoria .container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .titulo {
-    color: #303030;
-    font-size: 36px;
-    font-weight: bold;
+}
+
+.titulo {
+    background-color: var(--destaque);
+    text-shadow: 0px 0px 5px var(--primary900);
+    padding: 64px;
+    color: var(--background600);
+    font-size: 50px;
     margin-bottom: 20px;
-  }
-  
-  .descricao {
-    color: #303030;
+    font-family: "Bebas Neue";
+    text-align: center;
+}
+
+.descricao {
+    margin: 10%;    
+    color: var(--background500);
     font-size: 18px;
     margin-bottom: 40px;
-  }
-  
-  .cards {
+   
+}
+.preco {
+    font-size: 50px;
+    color: var(--background500);
+    margin-bottom: 40px;
+    font-family: "bebas neue";
+}
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 40px;
-  }
-  
-  .card {
-    background-color: #F5F5ED;
+}
+
+.card {
+    background-color: var(--background500);
     padding: 30px;
     border-radius: 2px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.835);
     width: 500px;
     text-align: left;
     margin: auto;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     color: #ff7f00;
     font-size: 24px;
     margin-bottom: 15px;
-  }
-  
-  .card p {
+}
+
+.card p {
     color: #333;
     font-size: 16px;
-  }
-  
-  .card h3, p{
+}
+
+.card h3,
+p {
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  .preco {
-    font-size: 20px;
-    font-weight: bold;
-    color: #303030;
-    margin-bottom: 40px;
-  }
-  
-  .btn-contato {
+}
+
+
+
+.btn-contato {
     display: inline-block;
     background-color: #ff7f00;
     color: #fff;
@@ -234,11 +247,12 @@ header {
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  .btn-contato:hover {
+    margin-bottom: 50px;
+}
+
+.btn-contato:hover {
     background-color: #e76f00;
-  }
+}
 
 /* Formulario Da Página Principal = (INDEX)*/
 
@@ -250,7 +264,7 @@ form {
     margin: auto;
     padding: 10px;
     width: 300px;
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.24) ;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.24);
 }
 
 form legend {
@@ -266,21 +280,21 @@ form p {
     font-size: 0.8em;
 }
 
-.form > input {
+.form>input {
     border: none;
     background: none;
     padding: 7px 15px;
     border: 1px solid rgb(143, 143, 143);
     border-radius: 15px;
-    width: 90%;              
-    outline: none;             
+    width: 90%;
+    outline: none;
     margin-top: 20px;
     background-color: #D2D2C8;
 
 }
 
 
-.form > label {
+.form>label {
     display: none;
 }
 
@@ -300,13 +314,13 @@ footer {
 
 .contato-rodape h2 {
     padding-bottom: 20px;
-    padding-top: 20px ;
+    padding-top: 20px;
     border-top: 1px solid var(--background600);
     font-size: 20px;
 }
 
 .contato-rodape p {
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
     font-size: 13px;
 }
 
@@ -316,13 +330,13 @@ footer {
     list-style: none;
 }
 
-.contato-rodape ul > li {
+.contato-rodape ul>li {
     padding: 10px;
     margin-bottom: 10px;
 }
 
 
-.contato-rodape ul > li:hover {
+.contato-rodape ul>li:hover {
     background-color: #85c2858e;
     transition: 0.3s;
     cursor: pointer;
@@ -332,7 +346,7 @@ footer {
     border-top: 1px solid var(--background600);
     text-align: center;
     padding: 20px 0px;
-    font-size: 13px ;
+    font-size: 13px;
 }
 
 .politicas-usuario p {
