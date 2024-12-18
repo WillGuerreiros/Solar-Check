@@ -133,31 +133,37 @@ header {
     padding-inline: 64px;
 }
 
+
 /*Pagina sobre*/
 #sobre {
-    height: 100vh;
-    display: flex;
     background-color: var(--background600);
     font-family: "ABeeZee";
-    text-align: center;
-    align-items: center;
-    padding: 64px;
-    gap: 64px;
+    padding: 150px 50px 50px 50px;
+    margin: auto;
+
+}
+
+#sobre  img {
+    width: 100%;
 }
 
 .sobreInfo {
-    flex-direction: column;
+    margin: auto;
+    text-align: left;
+    width: 310px;
+    background-color: #72d274;
+    padding: 50px  50px 50px 20px; 
+    height: 300px;
+}
+
+
+.sobreInfo p {
+    text-align: left;
 }
 
 .sobreInfo h1 {
+    margin-bottom: 40px ;
     font-size: xx-large;
-    margin: 32px;
-}
-
-#sobre img {
-    display: flex;
-    width: 50%;
-    height: auto;
 }
 
 

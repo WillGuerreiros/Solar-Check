@@ -32,16 +32,40 @@
         pointer-events: all;
   }
 
-  .imagem-midia > p, h1, li {
-    display: none;
+  .sobreInfo {
+    top: 1px;
+  }
 
+
+  .imagem-midia   {
+    display: none ;
+}
+
+    .contato-rodape p  {
+        text-align: left;
     }
-
 
 }
 
 @media screen and (min-width: 768px) {
+    #sobre {
+        display: flex;
+    }
+
+    #sobre  img {
+    width: 50%;
+    }
     
+    
+    .sobreInfo {
+        margin: auto;
+        text-align: left;
+        margin-left:50px ;
+        padding: 50px  100px 50px 20px;
+        width: 600px;
+        height: 250%;
+    }
+
     #secao-form {
         display: flex;
         justify-content: center;
@@ -108,6 +132,10 @@
         border-left: 1px solid rgb(179, 179, 179);
         padding: 0px 40px;
         width: 300px;
+    }
+
+    .contato-rodape p {
+        text-align: left;
     }
 
     #displai-flex {
