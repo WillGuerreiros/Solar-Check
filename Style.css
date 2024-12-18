@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Bebas+Neue&display=swap');
 
 * {
     padding: 0px;
@@ -6,11 +7,6 @@
     text-decoration: none;
 }
 
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 
 :root {
@@ -25,23 +21,23 @@
 }
 
 button {
-   margin-top: 20px;
-   border: none;
-   background: none;
-   width: 100%;
-   background-color: var(--destaque);
-   font-weight: bolder;
-   
-   padding: 5px;
-   cursor: pointer;
-   transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    border: none;
+    background: none;
+    width: 100%;
+    background-color: var(--destaque);
+    font-weight: bolder;
+
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
     background-color: #85570e;
     color: var(--background500);
-    transition: 0.4s ease, transform 0.4s ease ;
-    
+    transition: 0.4s ease, transform 0.4s ease;
+
 }
 
 header {
@@ -70,8 +66,7 @@ header {
 
 
 .barraNavegacao {
-    max-width: 1280px;
-    height: 70px;
+    height: 8vh;
     margin-inline: auto;
     display: flex;
     justify-content: space-around;
@@ -94,84 +89,170 @@ header {
 }
 
 
-.home {
-    background-image: url(assets/images/homepageimage.png);
-    height: 500px;
+#home {
+    background-image: url("/assets/images/home.jpg");
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/* @media(max-width:480px) {
-    .hamburguer {
-        display: block;
-        z-index: 1;
-    }
-
-    .itemBarraNavegacao {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: var(--secundary700);
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-
-    }
-  
-  .barraNavegacao.active .itemBarraNavegacao {
-        clip-path: circle(1500px at 90% -15%);
-        pointer-events: all;
-  }
-
-} */
-
-#sobre  img {
-    width: 370px;
+    background-size: cover; 
 
 }
 
-/* Preços */
-
-#preco-section {
-   padding: 30px;
-   font-size: 90%; 
-   background-color: #ceffcd;
+.homeInfo {
+    text-shadow: black;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Bebas Neue";
+    color: var(--background500);
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px;
 
 }
 
-.titulo-preco {
+.homeInfo h1 {
+
+    font-size: 150px;
+    color: var(--background600);
+    text-shadow: 0px 0px 5px var(--background600);
+
+}
+
+.homeInfo h3 {
+    font-size: larger;
+}
+
+.homeInfo a {
+    text-decoration: none;
+    background-color: var(--secundary700);
+    color: var(--background500);
+    padding: 16px;
+    border-radius: 8px;
+    padding-inline: 64px;
+}
+
+/*Pagina sobre*/
+#sobre {
+    height: 100vh;
+    display: flex;
+    background-color: var(--background600);
+    font-family: "ABeeZee";
+    text-align: center;
+    align-items: center;
+    padding: 64px;
+    gap: 64px;
+}
+
+.sobreInfo {
+    flex-direction: column;
+}
+
+.sobreInfo h1 {
+    font-size: xx-large;
+    margin: 32px;
+}
+
+#sobre img {
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+
+
+/*card preços*/
+
+.consultoria {
+    background-color: var(--background600);
+    background-color: var(--secundary700);
+    font-family: "aBeeZee";
+}
+
+.consultoria .container {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-#preco-section h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 70px;
-    margin-bottom: 60px ;
-    display: inline-block;
-    border-bottom: 4px solid #1f880a;
-    padding-bottom: 20px; 
-    width: 200px; 
+.titulo {
+    background-color: var(--destaque);
+    text-shadow: 0px 0px 5px var(--primary900);
+    padding: 64px;
+    color: var(--background600);
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Bebas Neue";
+    text-align: center;
 }
 
-
-.preco {
-    padding:20px;
-    width: 200px;
-    margin: auto;
-    background-color: #303030;
+.descricao {
+    margin: 10%;    
     color: var(--background500);
+    font-size: 18px;
+    margin-bottom: 40px;
+   
+}
+.preco {
+    font-size: 50px;
+    color: var(--background500);
+    margin-bottom: 40px;
+    font-family: "bebas neue";
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: var(--background500);
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.835);
+    width: 500px;
+    text-align: left;
+    margin: auto;
+}
+
+.card h3 {
+    color: #ff7f00;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #333;
+    font-size: 16px;
+}
+
+.card h3,
+p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+.btn-contato {
+    display: inline-block;
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.btn-contato:hover {
+    background-color: #e76f00;
+}
 
 /* Formulario Da Página Principal = (INDEX)*/
 
@@ -201,7 +282,7 @@ form p {
     font-size: 0.8em;
 }
 
-.form > input {
+.form>input {
     border: none;
     background: none;
     padding: 7px 15px;
@@ -214,7 +295,7 @@ form p {
 
 }
 
-.form > label {
+.form>label {
     display: none;
 }
 
@@ -239,13 +320,13 @@ footer {
 
 .contato-rodape h2 {
     padding-bottom: 20px;
-    padding-top: 20px ;
+    padding-top: 20px;
     border-top: 1px solid var(--background600);
     font-size: 20px;
 }
 
 .contato-rodape p {
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
     font-size: 13px;
 }
 
@@ -257,13 +338,19 @@ footer {
     align-items: center;
 }
 
-.contato-rodape img {
+
+.contato-rodape img {}
+
+.contato-rodape ul>li {
     padding: 10px;
     margin-bottom: 10px;
 }
 
 
-.contato-rodape img:hover {
+
+.contato-rodape img:hover {}
+
+.contato-rodape ul>li:hover {
     background-color: #85c2858e;
     transition: 0.3s;
     cursor: pointer;
@@ -273,7 +360,7 @@ footer {
     border-top: 1px solid var(--background600);
     text-align: center;
     padding: 20px 0px;
-    font-size: 13px ;
+    font-size: 13px;
 }
 
 .politicas-usuario p {
