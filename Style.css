@@ -300,8 +300,6 @@ form p {
 }
 
 
-
-
 footer {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background500);
@@ -340,18 +338,16 @@ footer {
 
 
 .contato-rodape img {
-    padding-left: 20px;
+    padding: 20px;
 }
 
-.contato-rodape ul>li {
+.contato-rodape ul > li {
     padding: 10px;
     margin-bottom: 10px;
 }
 
-
-
 .contato-rodape img:hover {
-
+    background-color: #a8b5a8;
 }
 
 .contato-rodape ul>li:hover {
