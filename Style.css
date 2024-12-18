@@ -266,7 +266,7 @@ header {
 /*card preços*/
 
 .consultoria {
-    background-color: var(--background600);
+    margin-top: 140px;
     background-color: var(--secundary700);
     font-family: "aBeeZee";
 }
@@ -278,7 +278,6 @@ header {
 }
 
 .titulo {
-    background-color: var(--destaque);
     text-shadow: 0px 0px 5px var(--primary900);
     padding: 32px;
     color: var(--background600);
@@ -321,18 +320,24 @@ header {
 }
 
 .card h3 {
-    color: #ff7f00;
-    font-size: 24px;
+    color: #50ad08;
+    font-size: 20px;
     margin-bottom: 15px;
+    padding-bottom:20px ;
 }
 
 .card p {
-    color: #333;
+    color: #101010;
     font-size: 16px;
 }
 
-.card h3,
-p {
+.card h1 {
+    font-size: 3em;
+    color: #022b03;
+    text-align: center;
+} 
+
+.card h3, p {
     text-align: center;
     margin-bottom: 10px;
 }
@@ -359,6 +364,7 @@ p {
 
 #secao-form {
     padding: 50px 0px;
+    margin: 60px 0px;
 }
 
 form {
